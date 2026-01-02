@@ -1,670 +1,258 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>Dr. Gary Au&#39;s Homepage</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
-.mac-os-11 { --title-bar-height:28px; }
-html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
-iframe { margin: auto; }
-a.url { word-break: break-all; }
-a:active, a:hover { outline: 0px; }
-.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
-#write.first-line-indent p { text-indent: 2em; }
-#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
-#write.first-line-indent li { margin-left: 2em; }
-.for-image #write { padding-left: 8px; padding-right: 8px; }
-body.typora-export { padding-left: 30px; padding-right: 30px; }
-.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
-.typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) {
-  body.typora-export { padding-left: 0px; padding-right: 0px; }
-  #write { padding-left: 20px; padding-right: 20px; }
-  .CodeMirror-sizer { margin-left: 0px !important; }
-  .CodeMirror-gutters { display: none !important; }
-}
-#write li > figure:last-child { margin-bottom: 0.5rem; }
-#write ol, #write ul { position: relative; }
-img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font: inherit; }
-input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
-*, ::after, ::before { box-sizing: border-box; }
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
-#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
-p { line-height: inherit; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
-p { orphans: 4; }
-h1 { font-size: 2rem; }
-h2 { font-size: 1.8rem; }
-h3 { font-size: 1.6rem; }
-h4 { font-size: 1.4rem; }
-h5 { font-size: 1.2rem; }
-h6 { font-size: 1rem; }
-.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
-.hidden { display: none; }
-.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
-a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
-sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
-#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
-figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
-figure > table { margin: 0px; }
-tr { break-inside: avoid; break-after: auto; }
-thead { display: table-header-group; }
-table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
-table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
-.CodeMirror-linenumber { user-select: none; }
-.CodeMirror { text-align: left; }
-.CodeMirror-placeholder { opacity: 0.3; }
-.CodeMirror pre { padding: 0px 4px; }
-.CodeMirror-lines { padding: 0px; }
-div.hr:focus { cursor: none; }
-#write pre { white-space: pre-wrap; }
-#write.fences-no-line-wrapping pre { white-space: pre; }
-#write pre.ty-contain-cm { white-space: normal; }
-.CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
-#write .md-fences.mock-cm { white-space: pre-wrap; }
-.md-fences.md-fences-with-lineno { padding-left: 0px; }
-#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
-.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
-.CodeMirror-line, twitterwidget { break-inside: avoid; }
-.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
-.footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
-li div { padding-top: 0px; }
-blockquote { margin: 1rem 0px; }
-li .mathjax-block, li p { margin: 0.5rem 0px; }
-li blockquote { margin: 1rem 0px; }
-li { margin: 0px; position: relative; }
-blockquote > :last-child { margin-bottom: 0px; }
-blockquote > :first-child, li > :first-child { margin-top: 0px; }
-.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
-#write .footnote-line { white-space: pre-wrap; }
-@media print {
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
-  .typora-export #write { break-after: avoid; }
-  .typora-export #write::after { height: 0px; }
-  .is-mac table { break-inside: avoid; }
-}
-.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
-a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
-p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
-#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
-p > .md-image:only-child { display: inline-block; width: 100%; }
-#write .MathJax_Display { margin: 0.8em 0px 0px; }
-.md-math-block { width: 100%; }
-.md-math-block:not(:empty)::after { display: none; }
-.MathJax_ref { fill: currentcolor; }
-[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
-.md-task-list-item { position: relative; list-style-type: none; }
-.task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
-.math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
-.md-toc-content { position: relative; margin-left: 0px; }
-.md-toc-content::after, .md-toc::after { display: none; }
-.md-toc-item { display: block; color: rgb(65, 131, 196); }
-.md-toc-item a { text-decoration: none; }
-.md-toc-inner:hover { text-decoration: underline; }
-.md-toc-inner { display: inline-block; cursor: pointer; }
-.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
-.md-toc-h2 .md-toc-inner { margin-left: 2em; }
-.md-toc-h3 .md-toc-inner { margin-left: 4em; }
-.md-toc-h4 .md-toc-inner { margin-left: 6em; }
-.md-toc-h5 .md-toc-inner { margin-left: 8em; }
-.md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) {
-  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
-  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
-  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
-  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
-}
-a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
-.footnote-line a:not(.reversefootnote) { color: inherit; }
-.md-attr { display: none; }
-.md-fn-count::after { content: "."; }
-code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
-code { text-align: left; vertical-align: initial; }
-a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { transition: none 0s ease 0s; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
-.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
-.md-diagram-panel > svg { max-width: 100%; }
-[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
-[lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom: 0px; }
-video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: none; }
-.highlight td, .highlight tr { border: 0px; }
-mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
-.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
-@media print {
-  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
-}
-.md-diagram-panel .messageText { stroke: none !important; }
-.md-diagram-panel .start-state { fill: var(--node-fill); }
-.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
-.md-require-zoom-fix foreignobject { font-size: var(--mermaid-font-zoom); }
-
-
-:root {
-    --side-bar-bg-color: #fafafa;
-    --control-text-color: #777;
-}
-
-@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
-
-/* open-sans-regular - latin-ext_latin */
-  /* open-sans-italic - latin-ext_latin */
-    /* open-sans-700 - latin-ext_latin */
-    /* open-sans-700italic - latin-ext_latin */
-  html {
-    font-size: 16px;
-}
-
-body {
-    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: rgb(220,220,220);
-    color: rgb(0,0,0);
-    line-height: 1.6;
-}
-
-
-
-#bar
-{
-/* background-image:url(file:///C://Users//gadog//AppData//Roaming//Typora/themes/bar.png);*/
-/* background-repeat:no-repeat;*/
-height:55px;
-width:750px;
-line-height:55px;
-padding-left:20px;
-padding-right:20px;
-}
-
-#bar .link
-{
-float:left;
-height:55px;
-}
-
-#bar .link:hover
-{
-background-image:url(file:///C://Users//gadog//AppData//Roaming//Typora/themes/linkrollover.png);
-background-repeat:no-repeat;
-background-position:center;
-
-
-}
-
-
-#bar a
-{
-font-size:14px;
-font-weight:bold;
-color:#FBFDFB;
-margin-left:27px;
-margin-right:27px;
-
-}
-
-#bar a:hover
-{
-color:#999999;
-}
-
-
-
-
-#write {
-    max-width: 860px;
-  	margin: 0 auto;
-  	padding: 30px;
-    padding-bottom: 100px;
-}
-
-@media only screen and (min-width: 1400px) {
-	#write {
-		max-width: 1024px;
-	}
-}
-
-@media only screen and (min-width: 1800px) {
-	#write {
-		max-width: 1200px;
-	}
-}
-
-#write > ul:first-child,
-#write > ol:first-child{
-    margin-top: 30px;
-}
-
-a {
-    color: #4183C4;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
-}
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
-    text-decoration: none;
-}
-h1 tt,
-h1 code {
-    font-size: inherit;
-}
-h2 tt,
-h2 code {
-    font-size: inherit;
-}
-h3 tt,
-h3 code {
-    font-size: inherit;
-}
-h4 tt,
-h4 code {
-    font-size: inherit;
-}
-h5 tt,
-h5 code {
-    font-size: inherit;
-}
-h6 tt,
-h6 code {
-    font-size: inherit;
-}
-h1 {
-    font-size: 2.25em;
-    line-height: 1.2;
-/*    border-bottom: 1px solid #eee; */
-}
-h2 {
-    font-size: 1.75em;
-    line-height: 1.225;
-/*    border-bottom: 1px solid #eee; */
-}
-
-/*@media print {
-    .typora-export h1,
-    .typora-export h2 {
-        border-bottom: none;
-        padding-bottom: initial;
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Dr. Gary Au's Homepage</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
     }
-
-    .typora-export h1::after,
-    .typora-export h2::after {
-        content: "";
-        display: block;
-        height: 100px;
-        margin-top: -96px;
-        border-top: 1px solid #eee;
-    }
-}*/
-
-h3 {
-    font-size: 1.5em;
-    line-height: 1.43;
-}
-h4 {
-    font-size: 1.25em;
-}
-h5 {
-    font-size: 1em;
-}
-h6 {
-   font-size: 1em;
-    color: #777;
-}
-p,
-blockquote,
-ul,
-ol,
-dl,
-table{
-    margin: 0.8em 0;
-}
-li>ol,
-li>ul {
-    margin: 0 0;
-}
-hr {
-    height: 2px;
-    padding: 0;
-    margin: 16px 0;
-    border: 0 none;
-    overflow: hidden;
-    background-color: #e7e7e7;
-/*    background-color: rgb(22,22,22); new*/
-    box-sizing: content-box;
-}
-
-li p.first {
-    display: inline-block;
-}
-ul,
-ol {
-    padding-left: 30px;
-}
-ul:first-child,
-ol:first-child {
-    margin-top: 0;
-}
-ul:last-child,
-ol:last-child {
-    margin-bottom: 0;
-}
-blockquote {
-    border-left: 4px solid #dfe2e5;
-    padding: 0 15px;
-    color: #777777;
-}
-blockquote blockquote {
-    padding-right: 0;
-}
-table {
-    padding: 0;
-    word-break: initial;
-}
-table tr {
-/*    border-top: 1px solid #dfe2e5; */
-    margin: 0;
-    padding: 0;
-}
-table tr:nth-child(2n),
-thead {
-   
-}
-table th {
-    font-weight: bold;
-/*    border: 1px solid #dfe2e5; */
-    border-bottom: 0;
-    margin: 0;
-    padding: 6px 13px;
-}
-table td {
-    border: none;
-    margin: 0;
-    padding: 6px 13px;
-}
-table th:first-child,
-table td:first-child {
-    margin-top: 0;
-}
-table th:last-child,
-table td:last-child {
-    margin-bottom: 0;
-}
-
-.CodeMirror-lines {
-    padding-left: 4px;
-}
-
-.code-tooltip {
-    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
-    border-top: 1px solid #eef2f2;
-}
-
-.md-fences,
-code,
-tt {
-    border: 1px solid #e7eaed;
-    background-color: #f8f8f8;
-    border-radius: 3px;
-    padding: 0;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-}
-
-code {
-    background-color: #f3f4f4;
-    padding: 0 2px 0 2px;
-}
-
-.md-fences {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding-top: 8px;
-    padding-bottom: 6px;
-}
-
-
-.md-task-list-item > input {
-  margin-left: -1.3em;
-}
-
-@media print {
-    html {
-        font-size: 13px;
-    }
-    table,
-    pre {
-        page-break-inside: avoid;
-    }
-    pre {
-        word-wrap: break-word;
-    }
-}
-
-.md-fences {
-	background-color: #f8f8f8;
-}
-#write pre.md-meta-block {
-	padding: 1rem;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #f7f7f7;
-    border: 0;
-    border-radius: 3px;
-    color: #777777;
-    margin-top: 0 !important;
-}
-
-.mathjax-block>.code-tooltip {
-	bottom: .375rem;
-}
-
-.md-mathjax-midline {
-    background: #fafafa;
-}
-
-#write>h3.md-focus:before{
-	left: -1.5625rem;
-	top: .375rem;
-}
-#write>h4.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h5.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h6.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-.md-image>.md-meta {
-    /*border: 1px solid #ddd;*/
-    border-radius: 3px;
-    padding: 2px 0px 0px 4px;
-    font-size: 0.9em;
-    color: inherit;
-}
-
-.md-tag {
-    color: #a7a7a7;
-    opacity: 1;
-}
-
-.md-toc { 
-    margin-top:20px;
-    padding-bottom:20px;
-}
-
-.sidebar-tabs {
-    border-bottom: none;
-}
-
-#typora-quick-open {
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
-}
-
-#typora-quick-open-item {
-    background-color: #FAFAFA;
-    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
-    border-style: solid;
-    border-width: 1px;
-}
-
-/** focus mode */
-.on-focus-mode blockquote {
-    border-left-color: rgba(85, 85, 85, 0.12);
-}
-
-header, .context-menu, .megamenu-content, footer{
-    font-family: "Segoe UI", "Arial", sans-serif;
-}
-
-.file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state{
-    visibility: visible;
-}
-
-.mac-seamless-mode #typora-sidebar {
-    background-color: #fafafa;
-    background-color: var(--side-bar-bg-color);
-}
-
-.md-lang {
-    color: #b4654d;
-}
-
-.html-for-mac .context-menu {
-    --item-hover-bg-color: #E6F0FE;
-}
-
-#md-notification .btn {
-    border: 0;
-}
-
-.dropdown-menu .divider {
-    border-color: #e5e5e5;
-}
-
-.ty-preferences .window-content {
-    background-color: #fafafa;
-}
-
-.ty-preferences .nav-group-item.active {
-    color: white;
-    background: #999;
-}
-
- :root {--mermaid-font-zoom:1.5em ;} 
-</style>
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="github_new.css" />
 </head>
-<body class='typora-export os-windows'>
-<div id='write'  class=''><h1><a name="yu-hin-gary-au" class="md-header-anchor"></a><span>Yu Hin (Gary) Au</span></h1><figure><table><thead><tr><th>&nbsp;</th><th style='text-align:right;' >&nbsp;</th></tr></thead><tbody><tr><td><span>Associate Professor (Academic Programming) </span><br><span>Department of Mathematics and Statistics </span><br><span>University of Saskatchewan</span><br><span>Office: 239 McLean Hall </span><br><span>E-mail: </span><code>auP@math.Qusask.caR</code><span> (with P,Q,R removed)</span></td><td style='text-align:right;' ><img src="IMG_0011n.JPG" style="zoom: 60%;" /></td></tr></tbody></table></figure><hr /><p><span>Hello! I am an Associate Professor in the Department of Mathematics and Statistics at the University of Saskatchewan. I have what&#39;s akin to a teaching-stream appointment (hence the &quot;Academic Programming&quot; designation in my position title), and am particularly focused on the design and delivery of our undergraduate programs and courses in mathematics and statistics.</span></p><p><span>Previously, I completed my Ph.D. in Combinatorics and Optimization at the University of Waterloo, under the supervision of Levent Tunçel. After that, I was an Assistant Professor at the Milwaukee School of Engineering for several years.</span></p><hr /><h2><a name="research" class="md-header-anchor"></a><span>Research</span></h2><p><span>My research interest mainly lies in discrete optimization. I like to study the theory and applications of linear, integer, and semidefinite programming, with a particular focus on analyzing lift-and-project methods and their power and limitations in tackling problems that arise from combinatorial optimization.</span></p><p><span>More broadly, I am easily attracted to most things discrete mathematics, such as problems in combinatorics and graph theory.</span></p><p><span>Some of my work to date:</span></p><ul><li><span>A New Generalization of the Narayana Numbers Inspired by Linear Operators on Associative </span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.215ex" height="1.994ex" viewBox="0 -755.9 523 858.4" role="img" focusable="false" style="vertical-align: -0.238ex;"><defs><path stroke-width="0" id="E2-MJMATHI-64" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E2-MJMATHI-64" x="0" y="0"></use></g></svg></span><script type="math/tex">d</script><span>-ary Algebras</span>
-<span>(with </span><a href='https://artsandscience.usask.ca/profile/MBremner'><span>Murray Bremner</span></a><span>)</span>
-<span>Submitted (2025)</span>
-<span> </span><a href='AuB25a.pdf'><span>Preprint</span></a></li><li><span>A Computational Search for Minimal Obstruction Graphs for the Lovász-Schrijver SDP Hierarchy</span>
-<span>(with </span><a href='http://www.math.uwaterloo.ca/~ltuncel/'><span>Levent Tunçel</span></a><span>)</span>
-<span>Submitted (2025)</span>
-<span> </span><a href='AuT25b.pdf'><span>Preprint</span></a></li><li><span>Stable Set Polytopes with Rank </span><span class="MathJax_SVG" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="9.033ex" height="2.577ex" viewBox="0 -806.1 3889 1109.7" role="img" focusable="false" style="vertical-align: -0.705ex;"><defs><path stroke-width="0" id="E3-MJMAIN-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z"></path><path stroke-width="0" id="E3-MJMATHI-56" d="M52 648Q52 670 65 683H76Q118 680 181 680Q299 680 320 683H330Q336 677 336 674T334 656Q329 641 325 637H304Q282 635 274 635Q245 630 242 620Q242 618 271 369T301 118L374 235Q447 352 520 471T595 594Q599 601 599 609Q599 633 555 637Q537 637 537 648Q537 649 539 661Q542 675 545 679T558 683Q560 683 570 683T604 682T668 681Q737 681 755 683H762Q769 676 769 672Q769 655 760 640Q757 637 743 637Q730 636 719 635T698 630T682 623T670 615T660 608T652 599T645 592L452 282Q272 -9 266 -16Q263 -18 259 -21L241 -22H234Q216 -22 216 -15Q213 -9 177 305Q139 623 138 626Q133 637 76 637H59Q52 642 52 648Z"></path><path stroke-width="0" id="E3-MJMAIN-28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path><path stroke-width="0" id="E3-MJMATHI-47" d="M50 252Q50 367 117 473T286 641T490 704Q580 704 633 653Q642 643 648 636T656 626L657 623Q660 623 684 649Q691 655 699 663T715 679T725 690L740 705H746Q760 705 760 698Q760 694 728 561Q692 422 692 421Q690 416 687 415T669 413H653Q647 419 647 422Q647 423 648 429T650 449T651 481Q651 552 619 605T510 659Q492 659 471 656T418 643T357 615T294 567T236 496T189 394T158 260Q156 242 156 221Q156 173 170 136T206 79T256 45T308 28T353 24Q407 24 452 47T514 106Q517 114 529 161T541 214Q541 222 528 224T468 227H431Q425 233 425 235T427 254Q431 267 437 273H454Q494 271 594 271Q634 271 659 271T695 272T707 272Q721 272 721 263Q721 261 719 249Q714 230 709 228Q706 227 694 227Q674 227 653 224Q646 221 643 215T629 164Q620 131 614 108Q589 6 586 3Q584 1 581 1Q571 1 553 21T530 52Q530 53 528 52T522 47Q448 -22 322 -22Q201 -22 126 55T50 252Z"></path><path stroke-width="0" id="E3-MJMAIN-29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path><path stroke-width="0" id="E3-MJMAIN-2F" d="M423 750Q432 750 438 744T444 730Q444 725 271 248T92 -240Q85 -250 75 -250Q68 -250 62 -245T56 -231Q56 -221 230 257T407 740Q411 750 423 750Z"></path><path stroke-width="0" id="E3-MJMAIN-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E3-MJMAIN-7C" x="0" y="0"></use><use xlink:href="#E3-MJMATHI-56" x="278" y="0"></use><use xlink:href="#E3-MJMAIN-28" x="1047" y="0"></use><use xlink:href="#E3-MJMATHI-47" x="1436" y="0"></use><use xlink:href="#E3-MJMAIN-29" x="2222" y="0"></use><use xlink:href="#E3-MJMAIN-7C" x="2611" y="0"></use><use xlink:href="#E3-MJMAIN-2F" x="2889" y="0"></use><use xlink:href="#E3-MJMAIN-33" x="3389" y="0"></use></g></svg></span><script type="math/tex">|V(G)|/3</script><span> for the Lovász-Schrijver SDP Operator </span>
-<span>(with </span><a href='http://www.math.uwaterloo.ca/~ltuncel/'><span>Levent Tunçel</span></a><span>)</span>
-<span>Submitted (2025)</span>
-<span> </span><a href='AuT25a.pdf'><span>Preprint</span></a></li><li><span>On Connections Between Association Schemes and Analyses of Polyhedral and Positive Semidefinite Lift-and-Project Relaxations </span>
-<span>(with </span><a href='https://lindzeyn.github.io/'><span>Nathan Lindzey</span></a><span> and </span><a href='http://www.math.uwaterloo.ca/~ltuncel/'><span>Levent Tunçel</span></a><span>)</span>
-<em><span>Discrete Mathematics</span></em><span>, to appear</span>
-<span> </span><a href='https://doi.org/10.1016/j.disc.2025.114767'><span>Final version</span></a><span> / </span><a href='AuLT25a.pdf'><span>Preprint</span></a></li><li><span>On Rank-Monotone Graph Operations and Minimal Obstruction Graphs for the Lovász-Schrijver SDP Hierarchy </span>
-<span>(with </span><a href='http://www.math.uwaterloo.ca/~ltuncel/'><span>Levent Tunçel</span></a><span>)</span>
-<em><span>Mathematical Programming</span></em><span> 213 (2025), 1169-1209.</span>
-<span> </span><a href='https://doi.org/10.1007/s10107-024-02166-0'><span>Final version</span></a><span> / </span><a href='AuT24b.pdf'><span>Preprint</span></a></li><li><span>Stable Set Polytopes with High Lift-and-Project Ranks for the Lovász-Schrijver SDP Operators </span>
-<span>(with </span><a href='http://www.math.uwaterloo.ca/~ltuncel/'><span>Levent Tunçel</span></a><span>)</span>
-<em><span>Mathematical Programming</span></em><span> 212 (2025), 79-114.</span>
-<span> </span><a href='https://doi.org/10.1007/s10107-024-02093-0'><span>Final version</span></a><span> / </span><a href='AuT24a.pdf'><span>Preprint</span></a></li><li><span>Decompositions of Unit Hypercubes and the Reversion of a Generalized Möbius Series</span>
-<em><span>Electronic Journal of Combinatorics</span></em><span> 31 (2024), Article P2.26.</span>
-<span> </span><a href='https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p26/pdf'><span>Final version</span></a></li><li><span>Some Properties and Combinatorial Implications of Weighted Small Schröder Numbers</span>
-<em><span>Journal of Integer Sequences</span></em><span> 24 (2021), Article 21.1.1.</span>
-<span> </span><a href='https://cs.uwaterloo.ca/journals/JIS/VOL24/Au/au11.pdf'><span>Final version</span></a></li><li><span>Enumeration and Asymptotic Formulas for Rectangular Partitions of the Hypercube </span>
-<span>(with Fatemeh Bagherzadeh and </span><a href='https://artsandscience.usask.ca/profile/MBremner'><span>Murray Bremner</span></a><span>)</span>
-<em><span>Journal of Integer Sequences</span></em><span> 23 (2020), Article 20.1.4.</span>
-<span> </span><a href='https://cs.uwaterloo.ca/journals/JIS/VOL23/Au/au3.pdf'><span>Final version</span></a></li><li><span>Elementary Polytopes with High Lift-and-Project Ranks for Strong Positive Semidefinite Operators </span>
-<span>(with </span><a href='http://www.math.uwaterloo.ca/~ltuncel/'><span>Levent Tunçel</span></a><span>)</span>
-<em><span>Discrete Optimization</span></em><span> 27 (2018), 103-129.</span>
-<span> </span><a href='https://doi.org/10.1016/j.disopt.2017.10.001'><span>Final version</span></a><span> / </span><a href='AuT18a.pdf'><span>Preprint</span></a></li><li><span>Notes and Note-Pairs in Nørgård&#39;s Infinity Series </span>
-<span>(with Christopher Drexler-Lemire and </span><a href='https://cs.uwaterloo.ca/~shallit/'><span>Jeffrey Shallit</span></a><span>)</span>
-<em><span>Journal of Mathematics and Music</span></em><span> 11:1 (2017), 1-19.</span>
-<span> </span><a href='https://doi.org/10.1080/17459737.2017.1299807'><span>Final version</span></a><span> / </span><a href='AuDS17a.pdf'><span>Preprint</span></a></li><li><span>A Comprehensive Analysis of Polyhedral Lift-and-Project Methods </span>
-<span>(with </span><a href='http://www.math.uwaterloo.ca/~ltuncel/'><span>Levent Tunçel</span></a><span>)</span>
-<em><span>SIAM Journal on Discrete Mathematics</span></em><span> 30(1) (2016), 411-451.</span>
-<a href='https://doi.org/10.1137/130950173'><span>Final version</span></a><span> / </span><a href='AuT16a.pdf'><span>Preprint</span></a></li><li><span>Generalized de Bruijn Words for Primitive Words and Powers</span>
-<em><span>Discrete Mathematics</span></em><span> 338(12) (2015), 2320-2331.</span>
-<span> </span><a href='https://doi.org/10.1016/j.disc.2015.05.025'><span>Final version</span></a><span> / </span><a href='Au15a.pdf'><span>Preprint</span></a></li><li><span>Complexity Analyses of Bienstock-Zuckerberg and Lasserre Relaxations on the Matching and Stable Set Polytopes </span>
-<span>(with </span><a href='http://www.math.uwaterloo.ca/~ltuncel/'><span>Levent Tunçel</span></a><span>)</span>
-<em><span>Proceedings of the 15th Conference on Integer Programming and Combinatorial Optimization</span></em><span> (2011), 14-26.</span>
-<span> </span><a href='https://doi.org/10.1007/978-3-642-20807-2_2'><span>Final version</span></a><span> / </span><a href='AuT11a.pdf'><span>Preprint</span></a></li><li><span>Van der Waerden&#39;s Theorem and Avoidability in Words </span>
-<span>(with </span><a href='http://math.colgate.edu/~aaron/'><span>Aaron Robertson</span></a><span> and </span><a href='https://cs.uwaterloo.ca/~shallit/'><span>Jeffrey Shallit</span></a><span>)</span>
-<em><span>Integers</span></em><span> 11 (2011), 61-76.</span>
-<span> </span><a href='https://doi.org/10.1515/integ.2011.007'><span>Final version</span></a><span> / </span><a href='AuRS11a.pdf'><span>Preprint</span></a></li><li><span>On the Polyhedral Lift-and-Project Methods and the Fractional Stable Set Polytope </span>
-<span>(with </span><a href='http://www.math.uwaterloo.ca/~ltuncel/'><span>Levent Tunçel</span></a><span>)</span>
-<em><span>Discrete Optimization</span></em><span> 6(2) (2009), 206-213.</span>
-<span> </span><a href='https://doi.org/10.1016/j.disopt.2008.10.002'><span>Final version</span></a><span> / </span><a href='AuT09a.pdf'><span>Preprint</span></a></li><li><span>A Comprehensive Analysis of Lift-and-Project Methods for Combinatorial Optimization</span>
-<a href='Au_PhD.pdf'><span>Ph. D. thesis</span></a></li><li><span>On the Polyhedral Lift-and-Project Rank Conjecture for the Fractional Stable Set Polytope</span>
-<a href='Au_MMath.pdf'><span>M. Math thesis</span></a></li></ul><hr /><h2><a name="teaching" class="md-header-anchor"></a><span>Teaching</span></h2><p><span>I personally find teaching math a deeply satisfying endeavour -- I get to share with others about a subject I&#39;m fascinated with, and play a small part in facilitating my students&#39; growth and success.</span></p><h3><a name="desmos-demonstrations" class="md-header-anchor"></a><span>Desmos Demonstrations </span></h3><p><span>I am avid user of Desmos in my teaching (as well as simply for my own amusement). Here are some Desmos demonstrations that fellow instructors and students may find enlightening. (Note that these were published in 2022, and thus do not take advantage of some of Desmos&#39; more recent features.)</span></p><ul><li><a href='Desmos/Desmos_Proofs.html'><span>Some Visual Proofs by Desmos</span></a></li><li><a href='Desmos/Desmos_CourseDemos.html'><span>Some Desmos Demonstrations for Introductory Math/Stats Courses</span></a></li></ul><h3><a name="courses-taught" class="md-header-anchor"></a><span>Courses Taught</span></h3><p><span>Finally, here is the list of courses I have taught at various places:</span></p><p><strong><span>University of Saskatchewan (2018-)</span></strong></p><p><span>MATH 110 -- Calculus I</span>
-<span>MATH 116 -- Calculus II</span>
-<span>MATH 123 -- Calculus I for Engineers</span>
-<span>MATH 124 -- Calculus II for Engineers</span>
-<span>MATH 133 -- Engineering Mathematics I</span>
-<span>MATH 134 -- Engineering Mathematics II</span>
-<span>MATH 163 -- Introduction to Mathematical Reasoning</span>
-<span>MATH 266 -- Linear Algebra I</span>
-<span>MATH 336 -- Mathematical Modelling I</span>
-<span>STAT 103 -- Elementary Probability</span>
-<span>STAT 242 -- Statistical Theory and Methodology</span></p><p><strong><span>Milwaukee School of Engineering (2014-2017)</span></strong></p><p><span>MA 120 -- Precalculus Mathematics</span>
-<span>MA 136 -- Calculus I</span>
-<span>MA 137 -- Calculus II</span>
-<span>MA 231 -- Calculus III</span>
-<span>MA 232 -- Calculus IV</span>
-<span>MA 2310 -- Discrete Mathematics I</span>
-<span>MA 262 -- Probability and Statistics</span>
-<span>MA 343 -- Linear Programming</span>
-<span>MA 344 -- Nonlinear Programming</span>
-<span>MA 481 -- Game Theory</span></p><p><strong><span>University of Waterloo (2012-2014)</span></strong></p><p><span>CO 250 -- Introduction to Optimization</span>
-<span>MATH 235 -- Linear Algebra II</span>
-<span>MATH 215 -- Linear Algebra for Engineering</span></p><hr /><p>&nbsp;</p></div>
+<body>
+<h1 id="yu-hin-gary-au">Yu Hin (Gary) Au</h1>
+<hr />
+<table style="width:95%;">
+<tr>
+<td style="vertical-align:middle;">
+Associate Professor (Academic Programming)<br />
+Department of Mathematics and Statistics<br />
+University of Saskatchewan<br />
+Office: 239 McLean Hall<br />
+E-mail: <code>Pau@mathQ.usask.caR</code> (with P, Q, and R
+removed)<br />
+
+</td>
+<td style="vertical-align:middle; text-align:right;">
+<img src="IMG_0011n.JPG" alt="Headshot" style="width:40%;"><br />
+
+</td>
+</tr>
+</table>
+<hr />
+<p>Hello! I am an Associate Professor in the Department of Mathematics
+and Statistics at the University of Saskatchewan. I have what’s akin to
+a teaching-stream appointment (hence the “Academic Programming”
+designation in my position title), and am particularly focused on the
+design and delivery of our undergraduate programs and courses in
+mathematics and statistics.</p>
+<p>Previously, I completed my Ph.D. in Combinatorics and Optimization at
+the University of Waterloo, under the supervision of Levent Tunçel.
+After that, I was an Assistant Professor at the Milwaukee School of
+Engineering for several years.</p>
+<p>Jump to:</p>
+<ul>
+<li><strong>Research:</strong> <a
+href="#publications">Publications</a></li>
+<li><strong>Teaching:</strong> <a href="#learning-tips">Learning
+Tips</a> / <a href="#desmos-demonstrations">Desmos Demonstrations</a> /
+<a href="#courses-taught">Courses Taught</a></li>
+</ul>
+<hr />
+<h2 id="research">Research</h2>
+<p>My research interest mainly lies in discrete optimization. I like to
+study the theory and applications of linear, integer, and semidefinite
+programming, with a particular focus on analyzing lift-and-project
+methods and their power and limitations in tackling problems that arise
+from combinatorial optimization.</p>
+<p>More broadly, I am easily attracted to most things discrete
+mathematics, such as problems in combinatorics and graph theory.</p>
+<h3 id="publications">Publications</h3>
+<p>Some of my work to date:</p>
+<ul>
+<li>A New Generalization of the Narayana Numbers Inspired by Linear
+Operators on Associative <span class="math inline"><em>d</em></span>-ary
+Algebras<br />
+(with <a href="https://artsandscience.usask.ca/profile/MBremner">Murray
+Bremner</a>)<br />
+Submitted (2025)<br />
+<a href="AuB25a.pdf">Preprint</a></li>
+<li>A Computational Search for Minimal Obstruction Graphs for the
+Lovász-Schrijver SDP Hierarchy<br />
+(with <a href="http://www.math.uwaterloo.ca/~ltuncel/">Levent
+Tunçel</a>)<br />
+Submitted (2025)<br />
+<a href="AuT25b.pdf">Preprint</a></li>
+<li>Stable Set Polytopes with Rank <span
+class="math inline">|<em>V</em>(<em>G</em>)|/3</span> for the
+Lovász-Schrijver SDP Operator<br />
+(with <a href="http://www.math.uwaterloo.ca/~ltuncel/">Levent
+Tunçel</a>)<br />
+Submitted (2025)<br />
+<a href="AuT25a.pdf">Preprint</a></li>
+<li>On Connections Between Association Schemes and Analyses of
+Polyhedral and Positive Semidefinite Lift-and-Project Relaxations<br />
+(with <a href="https://lindzeyn.github.io/">Nathan Lindzey</a> and <a
+href="http://www.math.uwaterloo.ca/~ltuncel/">Levent Tunçel</a>)<br />
+<em>Discrete Mathematics</em>, to appear<br />
+<a href="https://doi.org/10.1016/j.disc.2025.114767">Final version</a> /
+<a href="AuLT25a.pdf">Preprint</a></li>
+<li>On Rank-Monotone Graph Operations and Minimal Obstruction Graphs for
+the Lovász-Schrijver SDP Hierarchy<br />
+(with <a href="http://www.math.uwaterloo.ca/~ltuncel/">Levent
+Tunçel</a>)<br />
+<em>Mathematical Programming</em> 213 (2025), 1169-1209.<br />
+<a href="https://doi.org/10.1007/s10107-024-02166-0">Final version</a> /
+<a href="AuT24b.pdf">Preprint</a></li>
+<li>Stable Set Polytopes with High Lift-and-Project Ranks for the
+Lovász-Schrijver SDP Operators<br />
+(with <a href="http://www.math.uwaterloo.ca/~ltuncel/">Levent
+Tunçel</a>)<br />
+<em>Mathematical Programming</em> 212 (2025), 79-114.<br />
+<a href="https://doi.org/10.1007/s10107-024-02093-0">Final version</a> /
+<a href="AuT24a.pdf">Preprint</a></li>
+<li>Decompositions of Unit Hypercubes and the Reversion of a Generalized
+Möbius Series<br />
+<em>Electronic Journal of Combinatorics</em> 31 (2024), Article
+P2.26.<br />
+<a
+href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i2p26/pdf">Final
+version</a></li>
+<li>Some Properties and Combinatorial Implications of Weighted Small
+Schröder Numbers<br />
+<em>Journal of Integer Sequences</em> 24 (2021), Article 21.1.1.<br />
+<a href="https://cs.uwaterloo.ca/journals/JIS/VOL24/Au/au11.pdf">Final
+version</a></li>
+<li>Enumeration and Asymptotic Formulas for Rectangular Partitions of
+the Hypercube<br />
+(with Fatemeh Bagherzadeh and <a
+href="https://artsandscience.usask.ca/profile/MBremner">Murray
+Bremner</a>)<br />
+<em>Journal of Integer Sequences</em> 23 (2020), Article 20.1.4.<br />
+<a href="https://cs.uwaterloo.ca/journals/JIS/VOL23/Au/au3.pdf">Final
+version</a></li>
+<li>Elementary Polytopes with High Lift-and-Project Ranks for Strong
+Positive Semidefinite Operators<br />
+(with <a href="http://www.math.uwaterloo.ca/~ltuncel/">Levent
+Tunçel</a>)<br />
+<em>Discrete Optimization</em> 27 (2018), 103-129.<br />
+<a href="https://doi.org/10.1016/j.disopt.2017.10.001">Final version</a>
+/ <a href="AuT18a.pdf">Preprint</a></li>
+<li>Notes and Note-Pairs in Nørgård’s Infinity Series<br />
+(with Christopher Drexler-Lemire and <a
+href="https://cs.uwaterloo.ca/~shallit/">Jeffrey Shallit</a>)<br />
+<em>Journal of Mathematics and Music</em> 11:1 (2017), 1-19.<br />
+<a href="https://doi.org/10.1080/17459737.2017.1299807">Final
+version</a> / <a href="AuDS17a.pdf">Preprint</a></li>
+<li>A Comprehensive Analysis of Polyhedral Lift-and-Project
+Methods<br />
+(with <a href="http://www.math.uwaterloo.ca/~ltuncel/">Levent
+Tunçel</a>)<br />
+<em>SIAM Journal on Discrete Mathematics</em> 30(1) (2016),
+411-451.<br />
+<a href="https://doi.org/10.1137/130950173">Final version</a> / <a
+href="AuT16a.pdf">Preprint</a></li>
+<li>Generalized de Bruijn Words for Primitive Words and Powers<br />
+<em>Discrete Mathematics</em> 338(12) (2015), 2320-2331.<br />
+<a href="https://doi.org/10.1016/j.disc.2015.05.025">Final version</a> /
+<a href="Au15a.pdf">Preprint</a></li>
+<li>Complexity Analyses of Bienstock-Zuckerberg and Lasserre Relaxations
+on the Matching and Stable Set Polytopes<br />
+(with <a href="http://www.math.uwaterloo.ca/~ltuncel/">Levent
+Tunçel</a>)<br />
+<em>Proceedings of the 15th Conference on Integer Programming and
+Combinatorial Optimization</em> (2011), 14-26.<br />
+<a href="https://doi.org/10.1007/978-3-642-20807-2_2">Final version</a>
+/ <a href="AuT11a.pdf">Preprint</a></li>
+<li>Van der Waerden’s Theorem and Avoidability in Words<br />
+(with <a href="http://math.colgate.edu/~aaron/">Aaron Robertson</a> and
+<a href="https://cs.uwaterloo.ca/~shallit/">Jeffrey Shallit</a>)<br />
+<em>Integers</em> 11 (2011), 61-76.<br />
+<a href="https://doi.org/10.1515/integ.2011.007">Final version</a> / <a
+href="AuRS11a.pdf">Preprint</a></li>
+<li>On the Polyhedral Lift-and-Project Methods and the Fractional Stable
+Set Polytope<br />
+(with <a href="http://www.math.uwaterloo.ca/~ltuncel/">Levent
+Tunçel</a>)<br />
+<em>Discrete Optimization</em> 6(2) (2009), 206-213.<br />
+<a href="https://doi.org/10.1016/j.disopt.2008.10.002">Final version</a>
+/ <a href="AuT09a.pdf">Preprint</a></li>
+<li>A Comprehensive Analysis of Lift-and-Project Methods for
+Combinatorial Optimization<br />
+<a href="Au_PhD.pdf">Ph. D. thesis</a></li>
+<li>On the Polyhedral Lift-and-Project Rank Conjecture for the
+Fractional Stable Set Polytope<br />
+<a href="Au_MMath.pdf">M. Math thesis</a></li>
+</ul>
+<hr />
+<h2 id="teaching">Teaching</h2>
+<p>I personally find teaching math a deeply satisfying endeavour – I get
+to share with others about a subject I’m fascinated with, and play a
+small part in facilitating my students’ growth and success.</p>
+<h3 id="learning-tips">Learning Tips</h3>
+<p>In Fall 2025, I spent the first 3–5 minutes of each class discussing
+a learning topic with my students. Here are<br />
+the slides I used in class:</p>
+<ul>
+<li><a href="LearningTips/index.html">Learning Tips (slides)</a></li>
+</ul>
+<h3 id="desmos-demonstrations">Desmos Demonstrations</h3>
+<p>I am an avid user of Desmos in my teaching (as well as simply for my
+own amusement). Here are some Desmos demonstrations that fellow
+instructors and students may find enlightening. (Note that these were
+published in 2022, and thus do not take advantage of some of Desmos’
+more recent features.)</p>
+<ul>
+<li><a href="Desmos/Desmos_Proofs.html">Some Visual Proofs by
+Desmos</a></li>
+<li><a href="Desmos/Desmos_CourseDemos.html">Some Desmos Demonstrations
+for Introductory Math/Stats Courses</a></li>
+</ul>
+<h3 id="courses-taught">Courses Taught</h3>
+<p>Finally, here is the list of courses I have taught at various
+places:</p>
+<p><strong>University of Saskatchewan (2018-)</strong></p>
+<ul>
+<li>MATH 110 – Calculus I</li>
+<li>MATH 116 – Calculus II</li>
+<li>MATH 123 – Calculus I for Engineers</li>
+<li>MATH 124 – Calculus II for Engineers</li>
+<li>MATH 133 – Engineering Mathematics I</li>
+<li>MATH 134 – Engineering Mathematics II</li>
+<li>MATH 163 – Introduction to Mathematical Reasoning</li>
+<li>MATH 266 – Linear Algebra I</li>
+<li>MATH 336 – Mathematical Modelling I</li>
+<li>STAT 103 – Elementary Probability</li>
+<li>STAT 242 – Statistical Theory and Methodology</li>
+</ul>
+<p><strong>Milwaukee School of Engineering (2014-2017)</strong></p>
+<ul>
+<li>MA 120 – Precalculus Mathematics</li>
+<li>MA 136 – Calculus I</li>
+<li>MA 137 – Calculus II</li>
+<li>MA 231 – Calculus III</li>
+<li>MA 232 – Calculus IV</li>
+<li>MA 2310 – Discrete Mathematics I</li>
+<li>MA 262 – Probability and Statistics</li>
+<li>MA 343 – Linear Programming</li>
+<li>MA 344 – Nonlinear Programming</li>
+<li>MA 481 – Game Theory</li>
+</ul>
+<p><strong>University of Waterloo (2012-2014)</strong></p>
+<ul>
+<li>CO 250 – Introduction to Optimization</li>
+<li>MATH 235 – Linear Algebra II</li>
+<li>MATH 215 – Linear Algebra for Engineering</li>
+</ul>
+<hr />
+<p>Last updated: 2026-01-02.</p>
 </body>
 </html>
